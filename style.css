@@ -1,0 +1,177 @@
+body{
+    height: 90vh;
+    /* background-image: url("light-blue-background.jpg"); */
+
+}
+
+#loading{
+    display: none;
+    margin-top: 15%;
+}
+
+#content{
+    display: none;
+}
+
+#front{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title span:nth-child(odd){
+    color: lightskyblue;
+}
+#title span:nth-child(even){
+    color: #1976D2;
+}
+
+#title{
+    text-align: center;
+    font-size: 12vw;
+    
+}
+#input{
+    width: 80vw;
+    font-size: 6vw;
+    border: 0;
+    border-bottom: 2px solid #1976D2;
+    width: 90%;
+    line-height: 35px;
+    margin-top: 10%;
+}
+
+#search{
+    display: block;
+    color: #fff;
+    background-color: #1e90ff;
+    box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
+    border-radius: 0.5em;
+    outline: 0;
+    border: 0;
+    width: 35%;
+    height: 7.5vh;
+    margin-top: 10%;
+}
+
+
+/* 
+ --------------- Content style --------------
+*/
+
+#menu-tools{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+}
+
+#poster-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#poster{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.checked{
+    color: orange;
+}
+
+#rating-container{
+    text-align: center;
+    margin-top: 4%;
+}
+
+#rating-container span{
+    font-size: 4vh;
+}
+
+#plot-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#plot-content{
+    width: 80%;
+    text-align: center;
+}
+
+label{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#ratings{
+    margin-top: 6%;
+    margin-bottom: 6%;
+    
+}
+
+#media-widgets .fa {
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  
+#media-widgets{
+    vertical-align:top;
+    margin-top: 10%;
+}
+
+#share{
+    background-color: #1976D2;
+    color: #fff;
+    box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
+    border-radius: 0.5em;
+    outline: 0;
+    border: 0;
+    width: 15%;
+    height: 5.5vh;
+
+}
+
+#info-wrapper span, #info-wrapper label{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#content td{
+    line-height: 35px;
+    font-size: 18px;
+}
+
+#plot-content{
+    font-size: 20px;
+}
+
+#info-wrapper{
+    margin-left: 1.2vw;
+}
+
+@media (min-width: 320px) and (max-width: 1480px) {
+
+}

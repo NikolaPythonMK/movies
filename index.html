@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <title>Movie Info</title>
+</head>
+<body>
+    <div id="front">
+        <div id="title"><span>M</span><span>O</span><span>V</span><span>I</span><span>E </span><span>I</span><span>N</span><span>F</span><span>O</span></div>
+        <input type="text" id="input" placeholder="search your favourite movie...">
+        <button id="search">Search</button>
+        <img src="animate.gif" id="loading">
+    </div>
+
+    <div id="content">
+        <div id="menu-tools">
+            <img src="back_arrow.png">
+            <img src="heart-icon.png">
+        </div>
+
+        <div id="poster-wrapper">
+            <img src="" id="poster">
+        </div>
+
+        
+        <div id="rating-container">
+            <span class="fa fa-star" id="one"></span>
+            <span class="fa fa-star" id="two"></span>
+            <span class="fa fa-star" id="three"></span>
+            <span class="fa fa-star" id="four"></span>
+            <span class="fa fa-star" id="five"></span>
+            <span>(<span id="rating-el"></span>/10)</span>
+        </div>
+
+        <div id="info-wrapper">
+            <div id="plot-wrapper"><div id="plot-content"></div></div>
+            <div><label>Title: </label><span id="title-el"></span></div>
+            <div><label>Genre: </label><span id="genre-el"></span></div>
+            <div><label>Released: </label><span id="released-el"></span></div>
+            <div><label>Runtime: </label><span id="runtime-el"></span></div>
+            <div><label>Language: </label><span id="language-el"></span></div>
+            <div><label>Country: </label><span id="country-el"></span></div>
+            <div><label>Actors: </label><span id="actors-el"></span></div>
+            <div><label>Writer: </label><span id="writer-el"></span></div>
+            <div><label>Director: </label><span id="director-el"></span></div>
+            <div><label>Awards: </label><span id="awards-el"></span></div>
+            <div id="ratings">
+                <label>Ratings:</label>
+                <table>
+                    <tbody id="tbody-el"></tbody>
+                </table>
+            </div>
+
+            <div><label>Imdb rating: </label><span id="imdb-rat-el"></span></div>
+            <div><label>Imdb votes: </label><span id="imdb-votes-el"></span></div>
+            <div><label>Metascore: </label><span id="metascore-el"></span></div>
+            <div><label>Production: </label><span id="prod-el"></span></div>
+            <div><label>Website: </label><span id="website-el"></span></div>
+
+            <div id="media-widgets">
+                <button id="share">Share</button>
+                <a href="#" class="fa fa-facebook icon"></a>
+                <a href="#" class="fa fa-twitter icon"></a>  
+                <a href="#" class="fa fa-reddit icon"></a>
+                <a href="#" class="fa fa-instagram icon"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="history">
+        <!-- movies you searched for, (movie poster, shadow around the poster) -->
+    </div>
+
+    <div id="favourites">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
