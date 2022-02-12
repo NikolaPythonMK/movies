@@ -187,11 +187,6 @@ label{
     height: 100%;
 }
 
-#loading-container img{
-    width: 20%;
-    height: 20%;
-}
-
 #menu-tools img, #share{
     cursor: pointer;
 }
