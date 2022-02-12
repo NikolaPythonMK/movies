@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     function get_data(title){
         $.ajax({
-            url: "http://www.omdbapi.com/?apikey=5d7c67a7&t=" + title,
+            url: "https://www.omdbapi.com/?apikey=5d7c67a7&t=" + title,
             dataType: "jsonp",
             success: function(data){
                 $("#poster").attr("src", data.Poster);
