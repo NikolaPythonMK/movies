@@ -46,6 +46,8 @@ $(document).ready(function(){
                 $("#director-el").html(data.Director);
                 $("#awards-el").html(data.Awards);
 
+                $("#tbody-el").empty();
+
                 for(let i = 0; i < data.Ratings.length; i++){
                     let row = document.getElementById("tbody-el").insertRow();
                     row.insertCell().innerHTML = data.Ratings[i].Source;
