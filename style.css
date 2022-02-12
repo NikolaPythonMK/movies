@@ -65,6 +65,7 @@ body{
     position: sticky;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5%;
 }
 
 #poster-wrapper{
@@ -138,8 +139,9 @@ label{
 }
   
 #media-widgets{
-    vertical-align:top;
     margin-top: 10%;
+    padding-bottom: 10%;
+    height: 10%;
 }
 
 #share{
@@ -151,7 +153,13 @@ label{
     border: 0;
     width: 15%;
     height: 5.5vh;
+    vertical-align: top;
 
+}
+
+#share-btn-wrapper{
+    height: 10%;
+    display: inline-block;
 }
 
 #info-wrapper span, #info-wrapper label{
@@ -170,6 +178,27 @@ label{
 
 #info-wrapper{
     margin-left: 1.2vw;
+}
+
+#loading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#loading-container img{
+    width: 20%;
+    height: 20%;
+}
+
+#menu-tools img, #share{
+    cursor: pointer;
+}
+
+#favourite-btn{
+    width: 48px;
+    height: 48px;
 }
 
 @media (min-width: 320px) and (max-width: 1480px) {

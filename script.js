@@ -1,12 +1,11 @@
 $(document).ready(function(){
     $(".icon").hide();
+    $("#loading-container").hide();
 
     $("#search").click(function(){
         get_data($("#input").val());
-        //$("#search").toggle();
-        //$("#loading").toggle();
         $("#front").hide();
-        $("#content").show();
+        $("#loading-container").show();
     });
 
     $("#share").click(function(){
@@ -17,9 +16,20 @@ $(document).ready(function(){
             $(this).html("Share");
     });
 
+    $("#back-btn").click(function(){
+        $("#content").hide();
+        $("#input").val("");
+        $("#front").show();
+    });
+
+    $("#favourite-btn").click(function(){
+        $(this).attr("src", "heart-animated.gif");
+        setTimeout(() => {$(this).attr("src", "heart-icon.png")}, 1000);
+    })
+
     function get_data(title){
         $.ajax({
-            url: "http://www.omdbapi.com/?apikey=5d7c67a7&t=" + title,
+            url: "https://www.omdbapi.com/?apikey=5d7c67a7&t=" + title,
             dataType: "jsonp",
             success: function(data){
                 $("#poster").attr("src", data.Poster);
@@ -50,6 +60,8 @@ $(document).ready(function(){
                 $("#prod-el").html(data.Production);
                 $("#website-el").html(data.Website);
 
+                $("#loading-container").hide();
+                $("#content").show();
             }
         })
     }
